@@ -1,0 +1,17 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="invert">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1 
+                                                              0 -1 0 0 1 
+                                                              0 0 -1 0 1 
+                                                              0 0 0 1 0"/>
+    </filter>
+    <mask id="logo-mask">
+      <!-- The image is inverted so background becomes black (transparent) and text becomes white (opaque) -->
+      <image href="sponsor-2-final.jpg" width="200" height="100" filter="url(#invert)" />
+    </mask>
+  </defs>
+  
+  <!-- A white rectangle masked by the logo -->
+  <rect width="200" height="100" fill="white" mask="url(#logo-mask)" />
+</svg>
