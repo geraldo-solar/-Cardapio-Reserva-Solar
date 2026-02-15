@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Solar - Cardápio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <!-- Logo Image -->
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="pt">🇧🇷 Português</option>
+                    <option value="en">🇺🇸 English</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="it">🇮🇹 Italiano</option>
+                    <option value="es">🇪🇸 Español</option>
+                </select>
+            </div>
+            <img src="hotel-solar-logo.png" alt="Hotel Solar" class="brand-logo">
+
+            <div class="menu-identifier">
+                <h1 class="menu-title" data-i18n="menu_title">Cardápio Digital</h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <div class="sponsors-container">
+                <span class="sponsors-label" data-i18n="oferecimento">Oferecimento</span>
+                <div class="sponsors">
+                    <img src="sponsor-1.png" alt="Coca Cola" class="sponsor-logo coke">
+                    <img src="sponsor-2-final-v3.png" alt="Cerpa Export" class="sponsor-logo cerpa">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sticky-nav" id="navbar">
+        <ul>
+            <li><a href="#entradas" class="active" data-i18n="nav_entradas">Entradas</a></li>
+            <li><a href="#saladas" data-i18n="nav_saladas">Saladas</a></li>
+            <li><a href="#mariscos" data-i18n="nav_mariscos">Mariscos</a></li>
+            <li><a href="#peixes" data-i18n="nav_peixes">Peixes</a></li>
+
+            <li><a href="#carnes" data-i18n="nav_carnes">Carnes</a></li>
+            <li><a href="#sobremesas" data-i18n="nav_sobremesas">Sobremesas</a></li>
+            <li><a href="#bebidas" data-i18n="nav_bebidas">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <main id="menu">
+
+        <!-- Entradas -->
+        <section id="entradas" class="menu-section">
+            <h2 class="section-title" data-i18n="section_entradas">Entradas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 style="color: #e31837;" data-i18n="pescadinha_title">Pescadinha Frita (Sabor da Terra)</h3>
+                        <p class="description" data-i18n="pescadinha_desc">6 und de peixe pequeno int. da estação,
+                            farofa e vinagrete.</p>
+                    </div>
+                    <span class="price">R$ 68,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="batata_title">Batata Frita ao toque de queijo</h3>
+                        <p class="description" data-i18n="batata_desc">Molho rosé.</p>
+                    </div>
+                    <span class="price">R$ 44,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="camarao_praiano_title">Camarão Praiano</h3>
+                        <p class="description" data-i18n="camarao_praiano_desc">10 Camarões grelhados no espeto aos 3
+                            molhos, geléia de maracujá e
+                            pimenta e molho teriyaki.</p>
+                    </div>
+                    <span class="price">R$ 74,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="pao_solar_title">Pão do Solar</h3>
+                        <p class="description" data-i18n="pao_solar_desc">Cesta de pães, acompanha creme de queijo
+                            gorgonzola e azeite perfumado.
+                        </p>
+                    </div>
+                    <span class="price">R$ 50,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="carpaccio_title">Carpaccio ao Pesto</h3>
+                        <p class="description" data-i18n="carpaccio_desc">Lâminas finas de carne com queijo parmesão
+                            ralado e pão da casa gratinado
+                            na manteiga de ervas.</p>
+                    </div>
+                    <span class="price">R$ 62,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="ostra_title">Ostra na Manteiga de Escargot</h3>
+                        <p class="description" data-i18n="ostra_desc">Gratinado no parmesão, acompanha pão da casa
+                            gratinado na manteiga de
+                            ervas - 6 und.</p>
+                    </div>
+                    <span class="price">R$ 90,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="crocante_pirarucu_title">Crocante de Pirarucu</h3>
+                        <p class="description" data-i18n="crocante_pirarucu_desc">Empanado, molho de pimenta com tucupi,
+                            6 und.</p>
+                    </div>
+                    <span class="price">R$ 55,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="caranguejo_refogado_title">Caranguejo Refogado</h3>
+                        <p class="description" data-i18n="caranguejo_refogado_desc">Farofa.</p>
+                    </div>
+                    <span class="price">R$ 72,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="linguica_title">Linguiça Artesanal com recheio de Jambú</h3>
+                        <p class="description" data-i18n="linguica_desc">Grelhada, molho de pimenta com tucupi, farofa e
+                            vinagrete.</p>
+                    </div>
+                    <span class="price">R$ 68,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="camarao_crocante_title">Camarão Crocante</h3>
+                        <p class="description" data-i18n="camarao_crocante_desc">Empanado na farinha especial, mostarda
+                            rústica.</p>
+                    </div>
+                    <span class="price">R$ 98,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="lula_title">Anéis de Lula grelhada ao molho teriyaki</h3>
+                        <p class="description" data-i18n="lula_desc">Anéis de lula grelhadas no shoyo.</p>
+                    </div>
+                    <span class="price">R$ 75,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="file_tiras_title">Filé em Tiras</h3>
+                        <p class="description" data-i18n="file_tiras_desc">Grelhado ao molho de cebola, farofa de
+                            banana.</p>
+                    </div>
+                    <span class="price">R$ 92,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="queijo_melaco_title">Queijinho assado com Melaço</h3>
+                        <p class="description" data-i18n="queijo_melaco_desc">Espeto de queijo coalho assado - 2 und.
+                        </p>
+                    </div>
+                    <span class="price">R$ 50,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="isca_peixe_title">Isca de Peixe</h3>
+                        <p class="description" data-i18n="isca_peixe_desc">Farofa e molho rosé.</p>
+                    </div>
+                    <span class="price">R$ 84,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="tabua_frios_title">Tábua de Frios do Solar</h3>
+                        <p class="description" data-i18n="tabua_frios_desc">Queijos, salame, azeitona, uva, creme de
+                            queijo e pão da casa.</p>
+                    </div>
+                    <span class="price">R$ 80,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="harumaki_title">Harumaki de Caranguejo na maionese de chicória</h3>
+                        <p class="description" data-i18n="harumaki_desc">Rolinho primavera recheado com caranguejo e
+                            cream cheese - 4 und.</p>
+                    </div>
+                    <span class="price">R$ 60,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Saladas -->
+        <section id="saladas" class="menu-section">
+            <h2 class="section-title" data-i18n="section_saladas">Saladas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="salada_solar_title">Salada Solar</h3>
+                        <p class="description" data-i18n="salada_solar_desc">Camarão ao aroma de alho, mix de folhas,
+                            manga e creme de queijo.</p>
+                    </div>
+                    <span class="price">R$ 98,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="salada_feijao_title">Salada com Feijão manteiguinha</h3>
+                        <p class="description" data-i18n="salada_feijao_desc">Mix de folhas, vinagrete de feijão
+                            manteiguinha, tomate, cenoura e
+                            abobrinha e queijo.</p>
+                    </div>
+                    <span class="price">R$ 62,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mariscos (Renamed from Saladas) -->
+        <section id="mariscos" class="menu-section">
+            <h2 class="section-title" data-i18n="section_mariscos">Mariscos</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 style="color: #e31837;"><span data-i18n="arroz_frutos_mar_title">Arroz de Frutos do
+                                Mar</span> <span
+                                style="font-size: 0.8rem; font-style: italic; font-weight: normal; color: #333;"
+                                data-i18n="mais_pedido">(O mais
+                                pedido)</span></h3>
+                        <p class="description" data-i18n="arroz_frutos_mar_desc">Arroz cremoso no molho de tomate, com
+                            camarão, salmão, lula, polvo,
+                            pescada, mexilhão e pata de caranguejo.</p>
+                    </div>
+                    <span class="price">R$ 224,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="camarao_prata_title">Camarão Prata do Sal</h3>
+                        <p class="description" data-i18n="camarao_prata_desc">Camarão grelhado, banana em fatias ao
+                            creme de parmesão e risoto caseiro
+                            de parmesão.</p>
+                    </div>
+                    <span class="price">R$ 196,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="spaguetti_title">Spaguetti à maré cheia</h3>
+                        <p class="description" data-i18n="spaguetti_desc">Camarão grelhado, massa importada ao molho
+                            branco e crocantes de bacon.
+                        </p>
+                    </div>
+                    <span class="price">R$ 194,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="sopa_caranguejo_title">Sopa de caranguejo</h3>
+                        <p class="description" data-i18n="sopa_caranguejo_desc">Pão da casa.</p>
+                    </div>
+                    <span class="price">R$ 68,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peixes (Replacement for Sopa) -->
+        <section id="peixes" class="menu-section">
+            <h2 class="section-title" data-i18n="section_peixes">Peixes</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 style="color: #e31837;"><span data-i18n="peixe_frito_title">Peixe Frito Regional</span>
+                            <span style="font-size: 0.8rem; font-style: italic; font-weight: normal; color: #333;"
+                                data-i18n="record_venda">(Record
+                                de
+                                venda)</span></h3>
+                        <p class="description" data-i18n="peixe_frito_desc">Filé de pescada frita, arroz branco, farofa
+                            e vinagrete com feijão
+                            manteiguinha.</p>
+                    </div>
+                    <span class="price">R$ 172,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="peixe_grelhado_title">Peixe Grelhado</h3>
+                        <p class="description" data-i18n="peixe_grelhado_desc">Filé de pescada grelhada, purê cremoso,
+                            arroz de chicória e geléia de
+                            maracujá.</p>
+                    </div>
+                    <span class="price">R$ 168,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="peixe_brasa_title">Peixe na Brasa</h3>
+                        <p class="description" data-i18n="peixe_brasa_desc">Peixe inteiro da estação assado na brasa na
+                            manteiga de ervas, arroz
+                            branco, farofa, fritas, vinagrete com feijão manteiga.</p>
+                    </div>
+                    <span class="price">R$ 264,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carnes -->
+        <section id="carnes" class="menu-section">
+            <h2 class="section-title" data-i18n="section_carnes">Carnes</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 style="color: #e31837;"><span data-i18n="rabada_title">Rabada em tempero exclusivo
+                                finalizado com Jambú</span> <span
+                                style="font-size: 0.8rem; font-style: italic; font-weight: normal; color: #333;"
+                                data-i18n="prato_revelacao">(Prato
+                                revelação)</span></h3>
+                        <p class="description" data-i18n="rabada_desc">Arroz suculento com rabada desfiada em tempero
+                            exclusivo.</p>
+                    </div>
+                    <span class="price">R$ 150,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="file_solar_title">Filé do Solar</h3>
+                        <p class="description" data-i18n="file_solar_desc">Grelhado com molho de cebola, arroz
+                            piamontese, farofa de ovo e fritas.
+                        </p>
+                    </div>
+                    <span class="price">R$ 175,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="file_grelhado_title">Filé Grelhado</h3>
+                        <p class="description" data-i18n="file_grelhado_desc">Arroz branco, farofa e fritas.</p>
+                    </div>
+                    <span class="price">R$ 160,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobremesas -->
+        <section id="sobremesas" class="menu-section">
+            <h2 class="section-title" data-i18n="section_sobremesas">Sobremesas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="mix_frutas_title">Mix de Frutas</h3>
+                        <p class="description" data-i18n="mix_frutas_desc">Frutas da estação e mel.</p>
+                    </div>
+                    <span class="price">R$ 48,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 style="color: #e31837;"><span data-i18n="mini_churros_title">Mini churros Festival comidinha
+                                de praia</span> <span
+                                style="font-size: 0.8rem; font-style: italic; font-weight: normal; color: #333;"
+                                data-i18n="premiado">(Premiado)</span>
+                        </h3>
+                        <p class="description" data-i18n="mini_churros_desc">Porção de mini churros e doce de leite.</p>
+                    </div>
+                    <span class="price">R$ 50,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="felicidade_solar_title">Felicidade do Solar</h3>
+                        <p class="description" data-i18n="felicidade_solar_desc">Camadas de mousse de chocolate e ninho,
+                            crocante de brownie e finalizado
+                            com nutella.</p>
+                    </div>
+                    <span class="price">R$ 55,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="cocada_title">Cocada cremosa acompanhada de sorvete de Bacuri</h3>
+                    </div>
+                    <span class="price">R$ 55,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bebidas & Cerveja Combine -->
+        <section id="bebidas" class="menu-section">
+            <h2 class="section-title" data-i18n="section_bebidas">Bebidas</h2>
+
+            <h3 style="text-align:center; margin: 20px 0; font-family: var(--font-heading); font-size: 1.4rem;"><span
+                    data-i18n="cervejas_title">Cervejas</span>
+                <br><span
+                    style="font-size: 0.9rem; font-family: var(--font-body); font-weight: 300; text-transform: none;"
+                    data-i18n="long_neck">(Long
+                    Neck)</span>
+            </h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="tijuca_title">Tijuca Pilsen, Tijuca Puro Malte, Kroland e Silver</h3>
+                    </div>
+                    <span class="price">R$ 15,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="cerpa_title">Cerpa Export</h3>
+                    </div>
+                    <span class="price">R$ 17,00</span>
+                </div>
+            </div>
+
+            <!-- Doses -->
+            <h3 style="text-align:center; margin: 30px 0 20px 0; font-family: var(--font-heading); font-size: 1.4rem;"
+                data-i18n="doses_title">
+                Doses</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="whisky_old_parr">Whisky Old Parr</h3>
+                    </div>
+                    <span class="price">R$ 30,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="whisky_red">Whisky Johnnie Walker Red</h3>
+                    </div>
+                    <span class="price">R$ 23,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="vodka_imp">Vodka (Importada)</h3>
+                    </div>
+                    <span class="price">R$ 28,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="tequila">Tequila</h3>
+                    </div>
+                    <span class="price">R$ 28,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="cointreau">Cointreau</h3>
+                    </div>
+                    <span class="price">R$ 32,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="rum">Rum</h3>
+                    </div>
+                    <span class="price">R$ 25,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="gin">Gin</h3>
+                    </div>
+                    <span class="price">R$ 28,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="cachaca_jambu">Cachaça de Jambú</h3>
+                    </div>
+                    <span class="price">R$ 22,00</span>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin: 30px 0 20px 0; font-family: var(--font-heading); font-size: 1.4rem;"
+                data-i18n="nao_alcoolicos_title">
+                Não Alcoólicos</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="agua_sem_gas">Água sem gás</h3>
+                    </div>
+                    <span class="price">R$ 7,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="agua_com_gas">Água com gás</h3>
+                    </div>
+                    <span class="price">R$ 10,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="refri_lata">Refrigerante em lata</h3>
+                    </div>
+                    <span class="price">R$ 9,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="refri_ks">Refrigerante ks (coca e coca zero)</h3>
+                    </div>
+                    <span class="price">R$ 9,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="shot_limao">Shot de limão</h3>
+                    </div>
+                    <span class="price">R$ 6,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="sucos">Sucos (Consultar garçom)</h3>
+                    </div>
+                    <span class="price">R$ 12,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="agua_tonica">Água tônica Schweppes</h3>
+                    </div>
+                    <span class="price">R$ 12,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="agua_coco">Água de coco (Consultar garçom)</h3>
+                    </div>
+                    <span class="price">R$ 12,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="energetico">Energético (monster e red bull)</h3>
+                    </div>
+                    <span class="price">R$ 20,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="powerade">PowerAde</h3>
+                    </div>
+                    <span class="price">R$ 15,00</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="prohibitions">
+                <div class="prohibit-item">
+                    <span class="fa-stack fa-1x">
+                        <i class="fas fa-smoking fa-stack-1x"></i>
+                        <i class="fas fa-ban fa-stack-2x" style="color:var(--white); opacity: 0.8;"></i>
+                    </span>
+                    <span data-i18n="proibido_fumar">Proibido Fumar</span>
+                </div>
+                <div class="prohibit-item">
+                    <span class="fa-stack fa-1x">
+                        <i class="fas fa-snowflake fa-stack-1x"></i>
+                        <i class="fas fa-ban fa-stack-2x" style="color:var(--white); opacity: 0.8;"></i>
+                    </span>
+                    <span data-i18n="proibido_cooler">Proibido Cooler</span>
+                </div>
+                <div class="prohibit-item">
+                    <span class="fa-stack fa-1x">
+                        <i class="fas fa-paw fa-stack-1x"></i>
+                        <i class="fas fa-ban fa-stack-2x" style="color:var(--white); opacity: 0.8;"></i>
+                    </span>
+                    <span data-i18n="proibido_pets">Proibido Pet's</span>
+                </div>
+                <div class="prohibit-item">
+                    <i class="fas fa-volume-xmark" style="font-size: 2rem;"></i>
+                    <span data-i18n="proibido_som">Proibido Caixa de Som</span>
+                </div>
+            </div>
+            <div class="footer-branding">
+                <img src="hotel-solar-logo.png" alt="Hotel Solar" class="footer-logo">
+                <p class="footer-address" data-i18n="endereco">
+                    Av. Atlântica • Salinópolis - PA
+                </p>
+                <p class="footer-contact">
+                    Tel: (91) 98100-0800
+                </p>
+            </div>
+            <!-- <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Hotel Solar</p> -->
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
