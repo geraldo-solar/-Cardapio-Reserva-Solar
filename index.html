@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Solar - Cardápio</title>
+    <title>Reserva Solar - Cardápio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,8 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script src="translations.js?v=2"></script>
 </head>
 
 <body>
@@ -22,9 +23,11 @@
         <div class="hero-content">
             <!-- Logo Image -->
 
+
+
+            <img src="logo-white.png" alt="Reserva Solar" class="brand-logo" style="margin-bottom: 20px;">
+
             <div class="menu-identifier">
-                <img src="logo-white.png" alt="Hotel Solar" class="brand-logo"
-                    style="max-height: 100px; margin-bottom: 20px;">
                 <h1 class="menu-title" data-i18n="menu_title">Cardápio Digital</h1>
                 <div class="title-separator"></div>
             </div>
@@ -35,13 +38,33 @@
                     <img src="sponsor-1.png" alt="Coca Cola" class="sponsor-logo coke">
                     <img src="sponsor-2-final-v3.png" alt="Cerpa Export" class="sponsor-logo cerpa">
                 </div>
+
+                <div class="language-selector" style="margin-top: 20px;">
+                    <span class="lang-label" data-i18n="select_language"
+                        style="color: white; display: block; margin-bottom: 10px; font-family: var(--font-body); font-weight: 300;">Selecione
+                        o idioma</span>
+                    <div class="flags" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 20px;">
+                        <button class="lang-btn active" data-lang="pt" aria-label="Português"
+                            style="font-size: 2rem; background: none; border: none; cursor: pointer; transition: transform 0.2s; opacity: 1;">🇧🇷</button>
+                        <button class="lang-btn" data-lang="en" aria-label="English"
+                            style="font-size: 2rem; background: none; border: none; cursor: pointer; transition: transform 0.2s; opacity: 0.6;">🇺🇸</button>
+                        <button class="lang-btn" data-lang="fr" aria-label="Français"
+                            style="font-size: 2rem; background: none; border: none; cursor: pointer; transition: transform 0.2s; opacity: 0.6;">🇫🇷</button>
+                        <button class="lang-btn" data-lang="it" aria-label="Italiano"
+                            style="font-size: 2rem; background: none; border: none; cursor: pointer; transition: transform 0.2s; opacity: 0.6;">🇮🇹</button>
+                        <button class="lang-btn" data-lang="es" aria-label="Español"
+                            style="font-size: 2rem; background: none; border: none; cursor: pointer; transition: transform 0.2s; opacity: 0.6;">🇪🇸</button>
+                    </div>
+                </div>
             </div>
         </div>
+
     </header>
 
     <nav class="sticky-nav" id="navbar">
         <ul>
             <li><a href="#entradas" class="active" data-i18n="nav_entradas">Entradas</a></li>
+            <li><a href="#drinks" data-i18n="nav_drinks">Drinks</a></li>
             <li><a href="#saladas" data-i18n="nav_saladas">Saladas</a></li>
             <li><a href="#mariscos" data-i18n="nav_mariscos">Mariscos</a></li>
             <li><a href="#peixes" data-i18n="nav_peixes">Peixes</a></li>
@@ -185,6 +208,220 @@
                             cream cheese - 4 und.</p>
                     </div>
                     <span class="price">R$ 60,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks -->
+        <section id="drinks" class="menu-section">
+            <h2 class="section-title" data-i18n="section_drinks">Drinks</h2>
+
+            <h3 style="text-align:center; margin: 20px 0; font-family: var(--font-heading); font-size: 1.4rem;"
+                data-i18n="drinks_autorais">Autorais
+            </h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 style="color: #e31837;"><span data-i18n="bougainville_title">Bougainville</span> <span
+                                style="font-size: 0.8rem; font-style: italic; font-weight: normal; color: #333;"
+                                data-i18n="bougainville_desc">(Novo)</span>
+                        </h3>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="barquinho_title">O Barquinho</h3>
+                        <p class="description" data-i18n="barquinho_desc">Rum, Aperol, abacaxi, xarope de açúcar e
+                            limão.</p>
+                    </div>
+                    <span class="price">R$ 38,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="macarico_title">Maçarico</h3>
+                        <p class="description" data-i18n="macarico_desc">Gin de jambu, limão siciliano, xarope de açúcar
+                            e angustura.</p>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="espadarte_title">Espadarte</h3>
+                        <p class="description" data-i18n="espadarte_desc">Gin, licor 43, manjericão, limão taiti e
+                            açúcar.</p>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="porto_grande_title">Porto Grande</h3>
+                        <p class="description" data-i18n="porto_grande_desc">Tequila, cointreau, xarope chicória e limão
+                            taiti.</p>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="pirabas_title">Pirabas</h3>
+                        <p class="description" data-i18n="pirabas_desc">Gin, suco de limão siciliano e mel.</p>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="olho_grego_title">Olho Grego</h3>
+                        <p class="description" data-i18n="olho_grego_desc">Gin, curaçau blue, limão siciliano e espuma
+                            gengibre.</p>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="la_passion_title">La Passion</h3>
+                        <p class="description" data-i18n="la_passion_desc">Vodka, morango, pitaya vermelha, açúcar e
+                            gelo.</p>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin: 30px 0 20px 0; font-family: var(--font-heading); font-size: 1.4rem;"
+                data-i18n="drinks_atuais">
+                Atuais</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="moscow_mule_title">Moscow Mule</h3>
+                        <p class="description" data-i18n="moscow_mule_desc">Vodka, limão siciliano, xarope de gengibre e
+                            espuma de gengibre.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="gin_mule_title">Gin Mule</h3>
+                        <p class="description" data-i18n="gin_mule_desc">Gin, limão siciliano, xarope de gengibre e
+                            espuma de gengibre.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="gin_tonica_title">Gin Tônica</h3>
+                        <p class="description" data-i18n="gin_tonica_desc">Gin, água tônica e harmonização com
+                            especiarias.</p>
+                    </div>
+                    <span class="price">R$ 36,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="spritz_aperol_title">Spritz Aperol</h3>
+                        <p class="description" data-i18n="spritz_aperol_desc">Espumante, aperol e soda.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="mimosa_title">Mimosa</h3>
+                        <p class="description" data-i18n="mimosa_desc">Espumante e suco de laranja.</p>
+                    </div>
+                    <span class="price">R$ 28,00</span>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin: 30px 0 20px 0; font-family: var(--font-heading); font-size: 1.4rem;"
+                data-i18n="drinks_antologicos">
+                Antológicos</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="negroni_title">Negroni</h3>
+                        <p class="description" data-i18n="negroni_desc">Gin, vermute, campari e twist de laranja.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="mojito_title">Mojito</h3>
+                        <p class="description" data-i18n="mojito_desc">Rum, limão e hortelã.</p>
+                    </div>
+                    <span class="price">R$ 30,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="marguerita_title">Marguerita</h3>
+                        <p class="description" data-i18n="marguerita_desc">Tequila, cointreau, curaçau blue e limão
+                            taiti.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="long_island_title">Long Island Icedtea</h3>
+                        <p class="description" data-i18n="long_island_desc">Tequila, vodka , rum, gin, cointreau, suco
+                            de limão, xarope de açúcar e refrigerante de cola.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="garibaldi_title">Garibaldi</h3>
+                        <p class="description" data-i18n="garibaldi_desc">Campari, suco de laranja e gelo.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="fitzgerald_title">Fitzgerald</h3>
+                        <p class="description" data-i18n="fitzgerald_desc">Gin, xarope de açúcar e bitter.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="maracujack_title">Maracujack</h3>
+                        <p class="description" data-i18n="maracujack_desc">Jack Daniel's, maracujá e açúcar.</p>
+                    </div>
+                    <span class="price">R$ 37,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="caipirosca_title">Caipirosca</h3>
+                        <p class="description" data-i18n="caipirosca_desc">Vodka importada, frutas da estação, açúcar e
+                            gelo.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="caipirinha_title">Caipirinha</h3>
+                        <p class="description" data-i18n="caipirinha_desc">Cachaça, limão taiti, açúcar e gelo.</p>
+                    </div>
+                    <span class="price">R$ 28,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="coquetel_frutas_title">Coquetel de Frutas</h3>
+                        <p class="description" data-i18n="coquetel_frutas_desc">Mix de frutas, vodka, leite condensado,
+                            creme de leite e groselha e chantilly.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin: 30px 0 20px 0; font-family: var(--font-heading); font-size: 1.4rem;"
+                data-i18n="drinks_sem_alcool">
+                Sem Álcool</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 data-i18n="coquetel_sem_alcool_title">Coquetel de Frutas</h3>
+                        <p class="description" data-i18n="coquetel_sem_alcool_desc">Mix de frutas, leite condensado,
+                            creme de leite , groselha e chantilly.
+                        </p>
+                    </div>
+                    <span class="price">R$ 30,00</span>
                 </div>
             </div>
         </section>
@@ -552,7 +789,7 @@
                 </div>
             </div>
             <div class="footer-branding">
-                <img src="hotel-solar-logo.png" alt="Hotel Solar" class="footer-logo">
+                <img src="logo-white.png" alt="Reserva Solar" class="footer-logo">
                 <p class="footer-address" data-i18n="endereco">
                     Av. Atlântica • Salinópolis - PA
                 </p>
@@ -564,8 +801,7 @@
         </div>
     </footer>
 
-
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 
 </html>
